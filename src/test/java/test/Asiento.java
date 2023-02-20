@@ -1,5 +1,4 @@
 package test;
-import java.util.ArrayList;
 public class Asiento {
 	//Atributos
 	
@@ -10,10 +9,12 @@ public class Asiento {
 	//Metodos
 	
 	public void cambiarColor(String color) {
-		ArrayList<String> colores = new ArrayList<>();
-		colores.add("rojo verde amarillo negro blanco");
-		if (colores.contains(color)) {
-		this.color = color; 
+	
+		String colores []= {"rojo", "verde", "amarillo", "negro", "blanco"};
+		for (char i = 0; i<colores.length; i++){
+			if (color == colores[i]) {
+				this.color = color; 
+			}
 		}
 	}
 }
